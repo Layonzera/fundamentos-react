@@ -1,5 +1,7 @@
 import React from "react";
 
+import PropTypes from 'prop-types';
+
 export function Header(props) {
   return (
     <>
@@ -7,4 +9,13 @@ export function Header(props) {
       { props.children }
     </>
   )
+}
+
+Header.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.node,
+}
+
+Header.defaultProps = {
+  title: `Adryann's Blog`
 }
