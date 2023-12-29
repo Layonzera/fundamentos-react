@@ -1,12 +1,21 @@
 import React from "react";
 
-const category = 'Posts da semana';
+import { Post } from "./Post";
 
 export function App() {
   return (
     <>
       <h1>Adryann's Blog</h1>
-      <h2>{category}</h2>
+      <h2>Posts da semana</h2>
+
+      <hr />
+
+      <Post 
+        post={{
+          title: 'Titulo da noticia 01',
+          subtitle: 'Subtitulo da noticia 01'
+        }}
+      />
     </>
   );
 }
