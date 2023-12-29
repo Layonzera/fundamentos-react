@@ -1,12 +1,15 @@
 import React from "react";
 
 import { Post } from "./Post";
+import { Header } from "./Header";
+
 
 export function App() {
   return (
     <>
-      <h1>Adryann's Blog</h1>
-      <h2>Posts da semana</h2>
+      <Header title="Adryann's Blog">
+        <h2>Posts da semana</h2>
+      </Header>
 
       <hr />
 
