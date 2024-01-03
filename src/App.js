@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { Post } from "./Post";
 import { Header } from "./Header";
+import { ThemeProvider } from "./ThemeContext";
 
 export function App() {
   const [posts, setPosts] = useState([
@@ -31,7 +32,7 @@ export function App() {
   }
 
   return (
-    <>
+    <ThemeProvider>
       <Header>
         <h2>
           Posts da semana
@@ -50,6 +51,6 @@ export function App() {
           />
         ))
       }
-    </>
+    </ThemeProvider>
   );
 }
